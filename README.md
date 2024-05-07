@@ -21,12 +21,23 @@ Before any analysis could take place, some data cleansing and formatting was req
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/c1168f68-f462-44e5-8b56-cd5c59d0efcb)![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/e4549483-44a0-4427-a985-d51115b3037a)
 
 ## ANALYSIS
-Data Analysis was completed using Python Pandas. Points of interets include:
+Data Analysis was completed using Python Pandas. Points of interest include:
 1) Counts of all products and across all product categories
 2) Counts of products with seed oils + proportion across all product categories
 3) Instances of seed oils across all products and their individual categories
 
 ## VISUALISATION
-Dashboard was also created in PowerBI to visualise data.
+Dashboard was also created in PowerBI to visualise data allowing interested users to examine trends about seed oils in food products at COLES.
+
+1) Main Page - number of products with seed oils and % of all products
+2) Seed Oils - information about the makeup of specific seed oils across all product types
+3) Grid - Users can browse/ look up individual product names and if they possess seed oils
+
+Product category filter can be used to filter desired category/categories.
+
+![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/3de64409-9edf-486a-80dc-58af240dd3d2)
+![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/9c62f060-bfe5-42fe-9f31-af486a2eea68)
+![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/ecb72c38-f85e-4781-8889-c1f9ee048c1e)
+
 
 ## INSIGHTS

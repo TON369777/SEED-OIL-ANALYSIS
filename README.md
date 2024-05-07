@@ -85,7 +85,7 @@ The 'Meat Seafood' and 'Fruit Vegetable' categories were expected to have lower 
 
 Another point of interest is that there were infant formula products at Coles which were manufactured with seed oils such as canola and vegetable oils for the purposes of adding calories to the product. 
 
-**Regarding Specific Names of Seed Oils Used**
+**Regarding Specific Forms of Seed Oils Used**
 
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/746ccaf1-64bf-444d-acf5-209d8a489ec9)
 

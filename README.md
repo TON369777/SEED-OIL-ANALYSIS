@@ -30,19 +30,20 @@ Ingredients information of ~14 000 products were scraped from the Coles Supermar
 
 **Web Crawl and Scrape**
 
-A crawler program was written in Python to crawl and scrape the Coles website for all food products and ingredients information. The program would crawl through each of the product categories, obtain the individual product URLs and then individual product ingredients information scraped. Of note is that the program was interrupted at times and so the program had to be restarted many times. The raw data that was scraped was ultimately split into multiple files.
+A crawler program was written in Python to crawl and scrape the Coles website for all food products and ingredients information. The program would crawl through each of the product categories (as set out by COLES), obtain the individual product URLs and then individual product ingredients information scraped. Of note is that the program was interrupted at times and so the program had to be restarted many times. The raw data that was scraped was ultimately split into multiple files.
 
 **Data Cleansing and Formatting**
 
 Before any analysis could take place, some data cleansing and formatting was required.
 
 1) Baby Products consists of both food and non food items. Non food items were filtered out before analysis.
-2) Additional columns were added to indicate presence of specific seed oil types. 1 indicates Yes, 0 indicates No
+2) The ingredients data were formatted to lower case and the word 'oils' replaced with 'oil' to allow parsing for specific types of seed oil used in the manufacture of the food product.
+3) Additional columns were added to indicate presence of specific seed oil types. 1 indicates Yes, 0 indicates No
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/c3e992ce-bfd4-4f81-9dc3-00f3b9de3265)
-3) Final additional column was added to indicated an overall presence of seed oil/s in the product. As long as there was at least 1 indication of 1 value in preceding additional columns, this final column would indicate 1 for Yes.
+4) Final additional column was added to indicated an overall presence of seed oil/s in the product. As long as there was at least 1 indication of 1 value in preceding additional columns, this final column would indicate 1 for Yes.
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/c1168f68-f462-44e5-8b56-cd5c59d0efcb)![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/e4549483-44a0-4427-a985-d51115b3037a)
 
-4) Some duplicate entries existed e.g. a product might be categorised by Coles as part of 'Drinks' and 'Dairy Eggs Fridge'. The duplicate entries were remove and instead classified as part of only one category. This reduced the total product entries from ~14 000 to ~13 000.
+5) Some duplicate entries existed e.g. a product might be categorised by Coles as part of 'Drinks' and 'Dairy Eggs Fridge'. The duplicate entries were remove and instead classified as part of only one category. This reduced the total product entries from ~14 000 to ~13 000.
 
 ## ANALYSIS
 Data Analysis was completed using Python Pandas. Points of interest include:
@@ -89,4 +90,8 @@ Another point of interest is that there were infant formula products at Coles wh
 
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/746ccaf1-64bf-444d-acf5-209d8a489ec9)
 
-Majority of products manufactured with seed oils are listed as 'Vegetable Oils' with 'Canola Oil' coming in second with 'Sunflower Oil' coming in third. The bulk of seed oils listed are across these 3.
+Majority of products manufactured with seed oils are listed as 'Vegetable Oils' with 'Canola Oil' coming in second with 'Sunflower Oil' coming in third. The bulk of seed oils listed are across these 3. Nearly 50% of the products with seed oils are listed with 'Vegetable Oil' indicates the non desire of food companies to not disclose accurately the type of cooking oil they have used within their products.
+
+![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/f87a2abb-48a7-462f-8d04-8b1c206e9854)
+
+There was the expectation that a majority of food products at COLES would have seed oils due to the increasing production of seed oils over the years however selecting food products to consume based on proportion of food category would be inaccurate as even food categories of 'Meat Seafood' and 'Fruit Vegetable' also include processed food products containing undesirable ingredients. In that case, concerned consumers should pay attention to the ingredients when selecting food products to consume as even something like baby formula contain seed oils. As expected, raw produce such as meat, fruit and vegetables do not contain seed oils as they are unprocessed food products. Consumers looking to definitively avoid seed oils would do well to consume food products as close as possible to their fundamental form and cook their own food instead of resorting to processed forms of food.

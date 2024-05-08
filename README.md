@@ -68,7 +68,7 @@ Product category filter can be used to filter desired category/categories.
 
 ## INSIGHTS
 
-Food products sold at Coles were investigated for their presence of seed oils. The food products were split according to these categories:
+Food products sold at Coles were investigated for their presence of seed oils. The food products were split according to these categories (as set out by COLES):
 ![image](https://github.com/TON369777/SEED-OIL-ANALYSIS/assets/156875448/388ba089-369e-49a0-ae0f-0155840028be)
 
 **Total Products examined**: 12834
